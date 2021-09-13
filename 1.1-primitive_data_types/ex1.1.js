@@ -13,7 +13,6 @@ console.log('obj: ' + typeof(obj));
 console.log('bool: ' + typeof(bool));
 console.log('null: ' + typeof(n));
 console.log('undefined: ' + typeof(undefined));
-console.log('symbol: ' + typeof(sym));
 
 
 
