@@ -31,6 +31,8 @@ function findNextSquare(n) {
 
     if (!Number.isInteger(Math.sqrt(n))) {
         return -1;
+    } else {
+        return (Math.sqrt(n) + 1) * (Math.sqrt(n) + 1)
     }
 
     let next = 0
@@ -48,14 +50,18 @@ function findNextSquare(n) {
 
 }
 
-//console.log(findNextSquare(121));
+// console.log(findNextSquare(121));
 
 
 function unique(arr) {
 
     let u = arr[0];
     for (let i = 0 ; i < arr.length ; i++) {
-        if (arr[i] != u && arr[1] != arr[2]) {
+        if (arr[i] != u) {
+            if (arr[1] == arr[2]) {
+                u = arr[0];
+                break;
+            }
             u = arr[i];
             break;
         }
@@ -65,7 +71,7 @@ function unique(arr) {
 
 };
 
-// console.log(unique([ 0, 0, 0.55, 0, 0 ]));
+console.log(unique([ 0, 0, 2, 0, 0 ]));
 
 function summation(n) {
 
@@ -102,4 +108,4 @@ function basicOp(opt, n1, n2) {
 
 }
 
-console.log(basicOp('*', 5, 3));
+//console.log(basicOp('*', 5, 3));
