@@ -23,11 +23,20 @@ const textarea = document.querySelector('#textarea');
 const submitBtn = document.querySelector('.submitBtn');
 const error = document.querySelector('.error')
 
+let error2 = document.createElement('p')
+error2.innerHTML = 'Error 2'
+error2.style.background = 'yellow'
+error2.style.color = 'black';
+
+
+
+
 
 submitBtn.addEventListener('click', () => {
     let text = textarea.value;
     if (text.length < 100) {
         error.style.visibility = 'visible';
+        document.body.append(error2)
     } else {
         error.style.visibility = 'hidden';
     }

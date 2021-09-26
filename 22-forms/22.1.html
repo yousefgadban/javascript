@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/22-forms/22.1.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container" style="display: flex; align-items: center; justify-content: center; width: 100vw; height: 100vh; position: relative; flex-direction: column;">
+    
+        <div style="display: flex; flex-direction: column; align-items: center; width: 80vw; height: 50vh; background-color: yellow;">
+        
+            <p class="error" style="background-color: red; color: white; font-size: 24px; visibility: hidden;">Invalid input</p>
+
+            <form action="">
+
+                <p>Name:</p>
+                <input type="text" value="" id="name" placeholder="Enter your name">
+                <p>Age:</p>
+                <input type="number" value="" id="age" placeholder="Enter your age">
+                <p>Email:</p>
+                <input type="email" value="" id="email" placeholder="Enter your mail">
+
+                <br><br> 
+                <input type="button" value="Submit" id="submitBtn" style="width: 100%; background-color: #2196f3; color: white; font-size: 16px; border-radius: 5px;">
+
+            </form>
+            
+        </div>
+
+        <div>
+
+            
+            <input type="checkbox" value="show image" name="checkbox" id="checkbox">
+            <label class="show-image"> Show image</label>
+            <br>
+            <img class="smiley" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/1024px-Smiley.svg.png" alt="" style="width: 200px; visibility: hidden;">
+
+        </div>
+    
+    </div>
+
+    <div class="popup" style="width: 100vw; height: 100vh; background-color: black; opacity: 0.7; position: absolute; top: 0; left: 0; visibility: hidden; display: flex; align-items: center; justify-content: center;">
+
+    </div>
+
+    <div class="popup-window" style="width: 70vw; height: 50vh; background-color: greenyellow; z-index: 10; position: absolute; top: 25vh; left: 15vw; visibility: hidden;">
+        <p style="text-align: center;">confirmation</p>
+
+        <p>Name:<span>yousef</span></p>
+        <p>Age:<span>21</span></p>
+        <p>Email:<span>yousef@test.com</span></p>
+  
+        <br><br> 
+        <input type="button" value="Confirm" id="confirm" style="width: 70%; background-color: #2196f3; color: white; font-size: 16px; border-radius: 5px; margin-left: 15%;">
+        
+        <input type="button" value="Change" id="change" style="width: 70%; background-color: #2196f3; color: white; font-size: 16px; border-radius: 5px; margin-left: 15%; margin-top: 12px;">
+
+
+    </div>
+
+</body>
+</html>
