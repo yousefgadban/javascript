@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="minecraft.css">
+    <script src="minecraft.js" defer></script>
+</head>
+<body>
+
+    <div id="rotate">
+        <div class="message">
+            <p >rotate your device to play</p>
+        </div>
+    </div>
+
+    <div id="start">
+        <div class="startGame">
+            <div>
+                <label>Size:</label>
+                <input type="number" name="size" class="size" min="8" max="17" value="17">
+            </div>
+           
+            <input type="button" value="start" class="startBtn">
+        </div>
+    </div>
+
+    <div id="game">
+
+        <div id="inventory">
+            <div class="invent InTrunk">Trunk</div>
+            <div class="invent InPlan">Plan</div>
+            <div class="invent InCloud">Cloud</div>
+            <div class="invent InRock">Rock</div>
+        </div>
+        
+        <div id="playArea">
+            <div id="playField">
+                <!-- <div class="fieldComponent"></div> -->
+            </div>
+        </div> 
+
+        <div id="weapons">
+            <div class="weapon shovel">shovel</div>
+            <div class="weapon pickaxe">pickaxe</div>
+            <div class="weapon axe">axe</div>
+            <div class="weapon sun">Sun</div>
+            <div class="restartDiv">
+                <input type="button" value="restart" class="restartBtn">
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#rotate {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.message {
+    width: 50vw;
+    height: 30vh;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start {
+    width: 100vw;
+    height: 100vh;
+    background: url('images/background.jpg')  center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.startGame {
+    width: 50vw;
+    height: 30vh;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #2196f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.startBtn {
+    padding: 15px 30px;
+}
+
+.size {
+    padding: 10px 20px;
+}
+
+#game {
+    width: 100vw;
+    height: 100vh;
+    background: url('images/background.jpg')  center center/cover;
+    display: flex;
+    display: none;
+}
+
+#inventory {
+    width: 15vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#weapons {
+    width: 15vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#playArea {
+    width: 70vw;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#playField {
+    width: 50vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: grid;
+}
+
+.fieldComponent {
+    background-color: green;
+}
+
+.sky {
+    background-color: turquoise;
+}
+
+.ground {
+    /* background-color: brown; */
+    background: url('images/dirt.png')  center center/cover;
+}
+
+.groundSurface {
+    /* background-color: red; */
+    background: url('images/grass.png') center center/cover;
+}
+
+.rock {
+    /* background-color: gray; */
+    background: url('images/cobblestone.png')  center center/cover;
+}
+
+.cloud {
+    /* background-color: white; */
+    background: url('images/cloud.jpeg')  center center/cover;
+}
+
+.trunk {
+    /* background-color: darkorange; */
+    background: url('images/wood.png')  center center/cover;
+}
+
+.plan {
+    /* background-color: green; */
+    background: url('images/leaves.png')  center center/cover;
+}
+
+.InTrunk {
+    background: url('images/wood.png')  center center/cover;
+}
+
+.InPlan {
+    background: url('images/leaves.png')  center center/cover;
+}
+
+.InCloud {
+    background: url('images/cloud.jpeg')  center center/cover;
+}
+
+.InRock {
+    background: url('images/cobblestone.png')  center center/cover;
+}
+
+
+/* ////////////////////////////////////////////////////// */
+
+.weapon {
+    width: 70px;
+    height: 70px;
+    background-color: hotpink;
+}
+
+.restartBtn {
+    padding: 10px 20px;
+}
+
+.shovel {
+    background: url('images/shovel.png')  center center/cover;
+}
+
+.pickaxe {
+    background: url('images/pickaxe.png')  center center/cover;
+}
+
+.axe {
+    background: url('images/axe.png')  center center/cover;
+}
+
+.sun {
+    background: url('images/sun.png')  center center/cover;
+}
+
+
+/* ////////////////////////////////////////////////////// */
+
+
+.invent {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(105, 233, 255);
+}
+
+.selected {
+    border: 2px solid #2196f3;
+}
+
+
+
+
+
+
+ /* -------------------------------------------------- MEDIA QUERIES ------------------------------------------------ */
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+    #rotate {
+        display: flex;
+    }
+    #game {
+        display: none;
+    }
+    #start {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+    #rotate {
+        display: flex;
+    }
+    #game {
+        display: none;
+    }
+    #start {
+        display: none;
+    }
+}
+
+/* Normal */
+@media(min-width: 769px) and (max-width: 1200px) {
+    #rotate {
+        display: none;
+    }
+    #game {
+        display: none;
+    }
+    #start {
+        display: flex;
+    }
+}
+
+/* Widescreen */
+@media(min-width: 1201px) {
+    #rotate {
+        display: none;
+    }
+    #game {
+        display: none;
+    }
+    #start {
+        display: flex;
+    }
+}
+
+/* Landscape */
+@media(max-height: 500px) {
+    #rotate {
+        display: none;
+    }
+    #game {
+        display: none;
+    }
+    #start {
+        display: flex;
+    }
+
+}
