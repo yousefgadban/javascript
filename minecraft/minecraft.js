@@ -30,7 +30,7 @@ const startBtn = document.querySelector('.startBtn')
 let currentWeapon = 'notSelected';
 let currentInventory = 'notSelected';
 
-let componentSize = {width: 50, height: 50}
+let componentSize = {width: 30, height: 30}
 let screenComponentsNum = {x: 0, y: 0}
 
 screenComponentsNum.x = Math.floor(playArea.getBoundingClientRect().width/componentSize.width)
@@ -365,9 +365,18 @@ restartBtn.addEventListener('click', () => {
 
 
 startBtn.addEventListener('click', () => {
-    console.log('startBtn clicked ' + size.value);
 
-    if (+size.value > 7 && +size.value < 18) {
+    let zoom = document.querySelector('input[name="zoom"]:checked').value;
+
+    console.log('startBtn clicked ' + size.value + ' ' + zoom);
+
+    if (zoom == 'small') {
+        componentSize = {width: 30, height: 30}
+    } else {
+        componentSize = {width: 50, height: 50}
+    }
+
+    if (+size.value > 7 && +size.value < 23) {
 
         game.style.display = 'flex';
         start.style.display = 'none';
