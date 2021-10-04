@@ -33,6 +33,7 @@ function sortWords(arr) {
 
 
 let arr = ['one', 'awo'];
+//let arr = ['one', 'awo', 0];
 
 makeAllCaps(arr).then((data) => {
     sortWords(data).then((data1) => {
