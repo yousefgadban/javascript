@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/trevia/trevia.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="/trevia/trevia.js" defer></script>
+</head>
+<body>
+
+    <img class="cat" src="" alt="">
+    
+    <div class="container">
+
+        <div class="loaderScreen">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div> 
+        </div>
+
+        <div class="startScreen">
+            <h1 class="title">Trevia</h1>
+
+            <div class="pick">
+                <h3 >Pick category</h3>
+                <div class="categories">
+                    <p class="categ categindex1 selected">All</p>
+                    <p class="categ categindex2">Sport</p>
+                    <p class="categ categindex3">Books</p>
+                    <p class="categ categindex4">Films</p>
+                    <p class="categ categindex5">History</p>
+                </div>
+            </div>
+
+
+            <input class="btn startBtn" type="button" text="button" value="start">
+        </div>
+
+        <div class="gameScreen">
+            <h1 class="title">Score <span class="score"> 0/10</span></h1>
+
+            <p class="Question">Question question uestion uestion uestion uestion uestion uestion?</p>
+
+            <div class="answers"> 
+                <p class="answer answer1 selected"></p>
+                <p class="answer answer2"></p>
+                <p class="answer answer3"></p>
+                <p class="answer answer4"></p>
+            </div>
+
+            <div class="next">
+                <input class="nextBtn perviousbtn" type="button" text="button" value="Previous">
+                <input class="nextBtn nextbtn" type="button" text="button" value="Next">
+            </div>
+
+            <input class="btn endBtn" type="button" text="button" value="end">
+        </div>
+
+
+        <div class="endScreen">
+            <h1 class="title">Game over!</h1>
+
+            <p class="yourScore">Your score is: <span class="finalScore"> 0/10</span> </p>
+
+            <div class="chuck">
+                <p class="joke"></p>
+                <p class="chuck-joke"></p> 
+            </div>
+
+            <input class="btn playAgainBtn" type="button" text="button" value="Play Again">
+        </div>
+
+    </div>
+
+</body>
+</html>

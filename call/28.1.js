@@ -20,3 +20,15 @@ function whoIsStronger(getStrength) {
 let stronger = whoIsStronger.call(hero, hero.getStrength)
 console.log(stronger);
 
+//console.log(whoIsStronger(hero.getStrength.bind(hero)));
+
+
+
+// const f = new Function( 'num,num2','return num+num2');
+
+// console.log(f(100,200));
+
+// if(f.apply(f,[200,200]) === 400){
+//     console.log("success")
+// }
+

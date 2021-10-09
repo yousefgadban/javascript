@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    
+    <link rel="stylesheet" href="index.css">
+    <title>Covid</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Covid-19 world map</h1>
+
+        <div class="animationDiv">
+            <p class="loadingData">Loading data... Please wait...</p>
+            <div class="loadingItem loadingItem1">
+                <div class="loading-item mask">
+                    <img class="loading-img" src="images/mask.png" alt="">
+                </div>
+                <p class="loading-message">Wear a MASK</p>
+            </div>
+
+            <div class="loadingItem loadingItem2">
+                <div class="loading-item mask">
+                    <img class="loading-img" src="images/stay-home.png" alt="">
+                </div>
+                <p class="loading-message">Stay HOME</p>
+            </div>
+
+            <div class="loadingItem loadingItem3">
+                <div class="loading-item mask">
+                    <img class="loading-img" src="images/washing-hands.png" alt="">
+                </div>
+                <p class="loading-message">Wash HANDS</p>
+            </div>
+
+            <div class="loadingItem loadingItem4">
+                <div class="loading-item mask">
+                    <img class="loading-img" src="images/safe-distance.png" alt="">
+                </div>
+                <p class="loading-message">Safe DISTANCE</p>
+            </div>
+            
+        </div>
+
+        <div class="graphContainer">
+            <canvas class="myChart" id="myChart"></canvas>
+            <div class="countreyStats">
+                <div class="stat">
+                    <p class="statTitle">Total cases</p>
+                    <p class="statCount totalStat">1234</p>
+                </div>
+                <div class="stat">
+                    <p class="statTitle">New cases</p>
+                    <p class="statCount newStat">1234</p>
+                </div>
+                <div class="stat"> 
+                    <p class="statTitle">Total deaths</p>
+                    <p class="statCount deathsStat">1234</p>
+                </div>
+                <div class="stat">
+                    <p class="statTitle">New deaths</p>
+                    <p class="statCount newDeathsStat">1234</p>
+                </div>
+                <div class="stat">
+                    <p class="statTitle">Total recovered</p>
+                    <p class="statCount recoveredsStat">1234</p>
+                </div>
+                <div class="stat">
+                    <p class="statTitle">Critical</p>
+                    <p class="statCount criticalStat">1234</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="casesAndContinents">
+
+            <div class="continents"> 
+                <p class="btn continent selected" id="World">World</p>
+                <p class="btn continent" id="Asia">Asia</p>
+                <p class="btn continent" id="Europe">Europe</p>
+                <p class="btn continent" id="Africa">Africa</p>
+                <p class="btn continent" id="Americas">Americas</p>
+            </div>
+
+            <div class="cases casesDiv"> 
+                <p class="btn case selected" id="deaths">Deaths</p>
+                <p class="btn case" id="confirmed">Confirmed</p>
+                <p class="btn case" id="recovered">Recovered</p>
+                <p class="btn case" id="critical">Critical</p>
+            </div>
+
+        </div>
+
+        <div class="countriesList">
+
+        </div>
+
+    </div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" ></script>
+    <script src="index.js" ></script>
+    
+
+</body>
+</html>
+
+<!-- type="module"  -->
