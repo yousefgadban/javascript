@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/ToDo/todo.css">
+    <script src="/ToDo/todo.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="main">
+
+            <div class="upperSection">
+                <p class="appTitle">TO DO</p>
+                <img class="filterImg" src="/ToDo/images/filter.png" alt="">
+            </div>
+
+            <div class="allTasks">
+
+                <div class="tasksList">
+                    <!-- <div class="task">
+                        <div class="leftSection">
+                            <p class="taskTopic">topic</p>
+                            <p class="taskDate">date</p>
+                        </div>
+                        <div class="rightSection">
+                            <img class="deleteImg" src="/ToDo/images/delete.png" alt="">
+                            <div class="activeIndicator"></div>
+                        </div>
+                    </div> -->
+                </div>
+
+               
+                <div class="roundCircle addTask">
+                    <p class="plusLabel">+</p>
+                </div>
+
+            </div>
+
+
+            <div class="newTask">
+
+                <div class="editArea">
+                    <p class="errMsg"></p>
+                    <input type="text" value="" class="input topic" placeholder="Topic">
+                    <textarea type="textarea" value="" class="content" placeholder="Content" rows="8"></textarea>
+                    <div class="activeDiv">
+                        <input type="button" value="Active" class="actBtn activeBtn selected">
+                        <input type="button" value="Unactive" class="actBtn unactiveBtn">
+                    </div>
+                </div>
+
+                <div class="editTaskButtons">
+                    <input type="button" value="Cancel" class="btn cancelBtn">
+                    <input type="button" value="Delete" class="btn deleteBtn">
+                    <input type="button" value="Edit" class="btn editBtn">
+                </div>
+
+            </div>
+            
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

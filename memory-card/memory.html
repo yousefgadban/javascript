@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/memory-card/memory.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="/memory-card/memory.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="game">
+            <div class="upperSection">
+                <div class="guesses">
+                    <p>Guesses: <span class="remainGuessesSpan">5</span> </p>
+                </div>
+                <div class="timmer" style="display:flex; ">
+                    <p class="minutes">00</p>
+                    <p>:</p>
+                    <p class="seconds">00</p>
+                </div>
+            </div>
+            <div class="gameSection">
+                
+            </div>
+        </div>
+
+        <div class="settings">
+            <p class="memoryGameLabel">MEMORY GAME</p>
+            <p class="gameOverMessage"></p>
+           
+            <div class="options">
+                <div class="difficality">
+                    <input type="button" value="EASY" class="btn difficalityBtn easyBtn difficalitySelected">
+                    <input type="button" value="HARD" class="btn difficalityBtn hardBtn">
+                </div>
+                <div class="mode">
+                    <input type="button" value="DOGS" class="btn modeBtn1 modeSelected">
+                    <input type="button" value="CATS" class="btn modeBtn2">
+                </div>
+            </div>
+
+            <input type="button" value="START" class="restartBtn">
+
+        </div>
+
+    </div>
+
+</body>
+</html>

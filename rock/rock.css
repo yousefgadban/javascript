@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 44px;
+    color: red;
+}
+
+.scoreDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+.win {
+    font-size: 18px;
+    color: #333;
+    padding: 12px;
+}
+
+.scoreCount {
+    font-size: 26px;
+    color: #2196f3;
+}
+
+.gameSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+.playerChoice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2196f3;
+}
+
+.pcChoice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2196f3;
+}
+
+.image {
+    width: 220px;
+    height: 250px;
+    background-color: yellow;
+}
+
+.choicesDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    height: 60px;
+    background-color: yellowgreen;
+}
+
+.choiceBtn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #2196f3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.choiceImg {
+    width: 24px;
+}
+
+.computerDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

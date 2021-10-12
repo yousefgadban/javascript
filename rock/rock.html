@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/rock/rock.css">
+    <script src="/rock/rock.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title">Round 1</div>
+
+        <div class="scoreDiv">
+            <div class="score scorePlayer">
+                <p class="win">WIN</p>
+                <p class="scoreCount playerScore">0</p>
+            </div>
+            <div class="score scoreDraw"> 
+                <p class="win">Ties</p>
+                <p class="scoreCount drawScore">0</p>
+            </div>
+            <div class="score scorePC">
+                <p class="win">WIN</p>
+                <p class="scoreCount pcScore">0</p>
+            </div>
+        </div>
+
+        <div class="gameSection">
+
+            <div class="game playerGame">
+                <div class="playerChoice">
+                    <div class="image playerImg"></div>
+                    <div class="choicesDiv">
+                        <div class="choiceBtn rockBtn" id="rockBtnId">
+                            <img class="choiceImg" src="/rock/images/rock.png" alt="">
+                        </div>
+                        <div class="choiceBtn paperBtn" id="paperBtnId">
+                            <img class="choiceImg" src="/rock/images/paper.png" alt="">
+                        </div>
+                        <div class="choiceBtn scissorsBtn" id="scissorsBtnId">
+                            <img class="choiceImg" src="/rock/images/scissors.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game detailsGame"></div>
+
+            <div class="game pcGame">
+                <div class="pcChoice">
+                    <div class="image pcImg"></div>
+                    <div class="choicesDiv">
+                        <div class="computerDiv">
+                            <p class="computer">How Computer thinks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>

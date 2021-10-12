@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid #2196f3;
+    border-radius: 12px;
+    position: relative;
+}
+
+
+.addTask {
+    width: 60px;
+    height: 60px;
+    background-color: #2196f3;
+    border: 1px solid #2196f3;
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.plusLabel {
+    color: white;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.upperSection {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #2196f3;
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
+}
+
+.appTitle {
+    color: #2196f3;
+    font-size: 32px;
+    padding: 0 20px;
+}
+
+.filterImg {
+    width: 32px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.allTasks {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    /* display: none; */
+    overflow: auto;
+}
+
+.tasksList {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 2px;
+}
+
+.newTask {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    position: relative;
+    display: none;
+}
+
+.btn {
+    color: white;
+    background-color: #2196f3;
+    border: 1px solid #2196f3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 16px;
+}
+
+.deleteBtn {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.editArea {
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.editTaskButtons {
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.input {
+    width: 60vw;
+    height: 32px;
+    margin: 10px 0px;
+    padding: 0 10px;
+}
+
+.content {
+    width: 60vw;
+    margin: 10px 0px;
+    padding: 10px 10px;
+}
+
+.activeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.actBtn {
+    color: #333;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    width: 100px;
+}
+
+.activeBtn {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.unactiveBtn {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.selected {
+    color: white;
+    background-color: #2196f3;
+    padding: 10px 20px;
+    border: 1px solid #2196f3;
+}
+
+.task {
+    background-color: white;
+    width: 99%;
+    min-height: 80px;
+    border: 1px solid black;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deleteImg {
+    width: 28px;
+    margin: 0 10px;
+}
+
+.activeIndicator {
+    width: 12px;
+    height: 100%;
+    background-color: #2196f3;
+}
+
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.errMsg {
+    color: #ff0000;
+    font-size: 24px;
+}
+
+.taskTopic {
+    color: #333;
+    font-size: 22px;
+    text-align: left;
+}
+
+.taskDate {
+    color: #707070;
+    font-size: 16px;
+    text-align: left;
+}
